@@ -11,7 +11,7 @@
   &nbsp;
   <img src="site/assets/screens/tonight.jpg" width="240" alt="Tonight: the hours from sunset to sunrise">
   &nbsp;
-  <img src="site/assets/screens/three-nights.jpg" width="240" alt="Next three nights">
+  <img src="site/assets/screens/places.jpg" width="240" alt="Places: your saved places, kept on the phone">
 </p>
 
 ## What it does
