@@ -1,0 +1,26 @@
+# zorja.app site checks: the place check's words must match the app's for every API
+# example. Uses the runner's own Node.js; free GitHub Actions minutes only.
+name: Site checks
+
+on:
+  pull_request:
+    paths: ["site/**", "api/examples/**", ".github/workflows/site.yml"]
+  push:
+    branches: [main]
+    paths: ["site/**", "api/examples/**", ".github/workflows/site.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Test the place check's words
+        run: node --test site/tests/*.test.mjs

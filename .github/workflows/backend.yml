@@ -1,0 +1,39 @@
+# Backend checks on every pull request and on main: formatting, lint, strict
+# typing, tests (with a local Redis server) and the contract checker.
+# Free GitHub Actions minutes only: Linux runner, bounded run time, and runs
+# only when backend, contract or tool files change.
+name: Backend checks
+
+on:
+  pull_request:
+    paths: ["backend/**", "api/**", "tools/**", ".github/workflows/backend.yml"]
+  push:
+    branches: [main]
+    paths: ["backend/**", "api/**", "tools/**", ".github/workflows/backend.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: backend-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.13.0"
+      - name: Install a local Redis server for the cache tests
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends redis-server
+      - name: Install Python 3.13.16
+        run: uv python install 3.13.16
+      - name: Install locked dependencies
+        run: make -C backend setup
+      - name: Run checks
+        run: make -C backend check
+        env:
+          REDIS_TEST_SERVER: /usr/bin/redis-server

@@ -1,0 +1,34 @@
+# Checks the hosted service every 6 hours: a synthetic forecast, aurora collector
+# freshness and the monthly Redis allowance (backend/tools/check_hosted.py).
+# A failed run makes GitHub email the repository owner; that is the alert.
+# Free GitHub Actions minutes only: about 2 minutes a run, 4 runs a day.
+name: Hosted check
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hosted-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.13.0"
+      - name: Install Python 3.13.16
+        run: uv python install 3.13.16
+      - name: Check the hosted service
+        run: uv run --directory backend --frozen --no-dev python tools/check_hosted.py
+        env:
+          UPSTASH_READONLY_URL: ${{ secrets.UPSTASH_READONLY_URL }}
+          UPSTASH_READONLY_TOKEN: ${{ secrets.UPSTASH_READONLY_TOKEN }}

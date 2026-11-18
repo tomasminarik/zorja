@@ -1,0 +1,620 @@
+{
+  "apiVersion": "1.0.0",
+  "modelVersion": "visibility-v0.2-bracket-prototype",
+  "generatedAt": "2026-06-21T12:00:00Z",
+  "refreshAfter": "2026-06-21T12:05:00Z",
+  "minimumRevalidationIntervalSeconds": 60,
+  "location": {
+    "latitude": 69.6492,
+    "longitude": 18.9553,
+    "timezone": "Europe/Stockholm"
+  },
+  "now": {
+    "interval": {
+      "start": "2026-06-21T12:00:00Z",
+      "end": "2026-06-21T12:05:00Z"
+    },
+    "rating": "unfavorable",
+    "action": "skip",
+    "basis": "short_term",
+    "confidence": "low",
+    "summary": "Viewing conditions are obstructed.",
+    "reasons": [
+      {
+        "code": "daylight",
+        "effect": "blocker",
+        "message": "Sun is above the experimental viewing threshold."
+      },
+      {
+        "code": "experimental_model",
+        "effect": "limitation",
+        "message": "Experimental rules; no visibility probability."
+      },
+      {
+        "code": "unmodeled_local_conditions",
+        "effect": "limitation",
+        "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+      },
+      {
+        "code": "no_darkness_within_horizon",
+        "effect": "blocker",
+        "message": "No qualifying darkness in the bounded 72-hour search."
+      }
+    ],
+    "solarAltitudeDegrees": 42.49419890201856,
+    "cloudCoverPercent": 10,
+    "sourceIds": [
+      "32176220636f32945a730e3a6689ea3739dd20367506538de41589bc40efd139",
+      "4e52306b85d4c972b68086d78b275371f004662541b96d8640c4b793111ad216",
+      "320158d96bca96cc918954e4a56fc6b65a8fae86b8a95f76c90cddc254542d8f",
+      "astronomy"
+    ],
+    "activityEvidence": {
+      "temporalPolicy": "retained-bracket-min-v1",
+      "spatialPolicy": "bilinear-overhead-grid-v1",
+      "forecastInstants": [
+        "2026-06-21T11:55:00Z",
+        "2026-06-21T12:10:00Z"
+      ],
+      "sourceIds": [
+        "4e52306b85d4c972b68086d78b275371f004662541b96d8640c4b793111ad216",
+        "320158d96bca96cc918954e4a56fc6b65a8fae86b8a95f76c90cddc254542d8f"
+      ],
+      "supportedInterval": {
+        "start": "2026-06-21T11:55:00Z",
+        "end": "2026-06-21T12:10:00Z"
+      }
+    },
+    "factors": {
+      "darkness": "daylight",
+      "weather": "favorable",
+      "activity": "supported"
+    },
+    "activeSince": "2026-06-21T11:55:00Z",
+    "activeSinceIsBufferLimited": true
+  },
+  "upcomingStatus": "no_darkness_within_horizon",
+  "upcoming": null,
+  "upcomingActivityInstant": {
+    "forecastAt": "2026-06-21T12:10:00Z",
+    "sourceId": "320158d96bca96cc918954e4a56fc6b65a8fae86b8a95f76c90cddc254542d8f",
+    "overheadSignal": 80.0,
+    "activity": "supported",
+    "temporalPolicy": "exact-forecast-instant-v1",
+    "spatialPolicy": "bilinear-overhead-grid-v1"
+  },
+  "auroraReach": {
+    "group": "under_zone",
+    "magneticLatitude": 67.26,
+    "kpOverhead": -0.63,
+    "kpLowInNorth": -2.63,
+    "method": "aacgm-v2-noaa-oval-v1"
+  },
+  "planning": [
+    {
+      "localDate": "2026-06-21",
+      "period": {
+        "start": "2026-06-21T10:00:00Z",
+        "end": "2026-06-22T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-06-21T10:00:00Z",
+          "end": "2026-06-22T10:00:00Z"
+        },
+        "rating": "unfavorable",
+        "action": "skip",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Viewing conditions are obstructed.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          },
+          {
+            "code": "no_darkness_within_horizon",
+            "effect": "blocker",
+            "message": "No qualifying darkness in this local-night period."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "32176220636f32945a730e3a6689ea3739dd20367506538de41589bc40efd139",
+          "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "mixed",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-06-21T12:00:00Z",
+              "end": "2026-06-21T15:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-21T15:00:00Z",
+              "end": "2026-06-21T18:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-21T18:00:00Z",
+              "end": "2026-06-21T21:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-21T21:00:00Z",
+              "end": "2026-06-22T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T00:00:00Z",
+              "end": "2026-06-22T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T03:00:00Z",
+              "end": "2026-06-22T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T06:00:00Z",
+              "end": "2026-06-22T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T09:00:00Z",
+              "end": "2026-06-22T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1"
+      },
+      "darknessStatus": "no_darkness",
+      "windows": []
+    },
+    {
+      "localDate": "2026-06-22",
+      "period": {
+        "start": "2026-06-22T10:00:00Z",
+        "end": "2026-06-23T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-06-22T10:00:00Z",
+          "end": "2026-06-23T10:00:00Z"
+        },
+        "rating": "unfavorable",
+        "action": "skip",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Viewing conditions are obstructed.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          },
+          {
+            "code": "no_darkness_within_horizon",
+            "effect": "blocker",
+            "message": "No qualifying darkness in this local-night period."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "32176220636f32945a730e3a6689ea3739dd20367506538de41589bc40efd139",
+          "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "mixed",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-06-22T09:00:00Z",
+              "end": "2026-06-22T12:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T12:00:00Z",
+              "end": "2026-06-22T15:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T15:00:00Z",
+              "end": "2026-06-22T18:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T18:00:00Z",
+              "end": "2026-06-22T21:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-22T21:00:00Z",
+              "end": "2026-06-23T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T00:00:00Z",
+              "end": "2026-06-23T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T03:00:00Z",
+              "end": "2026-06-23T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T06:00:00Z",
+              "end": "2026-06-23T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T09:00:00Z",
+              "end": "2026-06-23T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1"
+      },
+      "darknessStatus": "no_darkness",
+      "windows": []
+    },
+    {
+      "localDate": "2026-06-23",
+      "period": {
+        "start": "2026-06-23T10:00:00Z",
+        "end": "2026-06-24T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-06-23T10:00:00Z",
+          "end": "2026-06-24T10:00:00Z"
+        },
+        "rating": "unfavorable",
+        "action": "skip",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Viewing conditions are obstructed.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          },
+          {
+            "code": "no_darkness_within_horizon",
+            "effect": "blocker",
+            "message": "No qualifying darkness in this local-night period."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "32176220636f32945a730e3a6689ea3739dd20367506538de41589bc40efd139",
+          "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "mixed",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-06-23T09:00:00Z",
+              "end": "2026-06-23T12:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T12:00:00Z",
+              "end": "2026-06-23T15:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T15:00:00Z",
+              "end": "2026-06-23T18:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T18:00:00Z",
+              "end": "2026-06-23T21:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-23T21:00:00Z",
+              "end": "2026-06-24T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-24T00:00:00Z",
+              "end": "2026-06-24T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-24T03:00:00Z",
+              "end": "2026-06-24T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-24T06:00:00Z",
+              "end": "2026-06-24T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-06-24T09:00:00Z",
+              "end": "2026-06-24T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1"
+      },
+      "darknessStatus": "no_darkness",
+      "windows": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "320158d96bca96cc918954e4a56fc6b65a8fae86b8a95f76c90cddc254542d8f",
+      "provider": "noaa_swpc",
+      "product": "noaa_ovation",
+      "role": "aurora_short_term",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-06-21T11:10:00Z",
+      "fetchedAt": "2026-06-21T11:58:00Z",
+      "validFrom": "2026-06-21T12:10:00Z",
+      "validUntil": "2026-06-21T12:10:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "ddb00fe1c9c16a7cd52f2d77635e57e46cb89c1d11cc46ac159a955390b746a1",
+      "provider": "noaa_swpc",
+      "product": "noaa_three_day",
+      "role": "aurora_planning",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-06-21T11:00:00Z",
+      "fetchedAt": "2026-06-21T12:00:00Z",
+      "validFrom": "2026-06-21T12:00:00Z",
+      "validUntil": "2026-06-25T12:00:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "32176220636f32945a730e3a6689ea3739dd20367506538de41589bc40efd139",
+      "provider": "met_norway",
+      "product": "met_locationforecast",
+      "role": "weather",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-06-21T11:00:00Z",
+      "fetchedAt": "2026-06-21T12:00:00Z",
+      "validFrom": "2026-06-21T12:00:00Z",
+      "validUntil": "2026-06-25T12:00:00Z",
+      "attribution": "MET Norway (CC BY 4.0)",
+      "url": "https://api.met.no/"
+    },
+    {
+      "id": "4e52306b85d4c972b68086d78b275371f004662541b96d8640c4b793111ad216",
+      "provider": "noaa_swpc",
+      "product": "noaa_ovation",
+      "role": "aurora_short_term",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-06-21T10:55:00Z",
+      "fetchedAt": "2026-06-21T11:58:00Z",
+      "validFrom": "2026-06-21T11:55:00Z",
+      "validUntil": "2026-06-21T11:55:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "astronomy",
+      "provider": "backend_astronomy",
+      "role": "darkness",
+      "product": "solar-v1-astral-3.2",
+      "kind": "calculation",
+      "status": "fresh",
+      "issuedAt": "2026-06-21T12:00:00Z",
+      "fetchedAt": null,
+      "validFrom": "2026-06-21T12:00:00Z",
+      "validUntil": "2026-06-25T12:00:00Z",
+      "attribution": "Astral 3.2 solar geometry",
+      "url": "https://astral.readthedocs.io/"
+    }
+  ],
+  "limitations": [
+    "Experimental assessment, not a scientifically validated visibility probability.",
+    "Current OVATION activity uses the minimum of retained forecasts at most 20 minutes apart; this experimental bracket is not observed continuous activity.",
+    "The newest upcoming OVATION forecast describes an exact instant, not a duration or a viewing guarantee.",
+    "Global Kp has no validated local planning mapping; horizon conditions are unmodeled.",
+    "Weather is modeled; between samples a conservative cloud envelope is used."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "synthetic",
+  "authoredAt": "2026-10-12",
+  "capturedAt": null,
+  "note": "Hand-authored shape examples, not live captures, not normalized snapshots, and not evidence that parsers or provider integrations work. OVATION mini grid is intentionally incomplete. Milestone 2 must add actual captures and strict parser expectations.",
+  "files": [
+    {
+      "name": "kp-conflicting.txt",
+      "sha256": "01ad6a9dc8105657101fa19a4ee6cf8ade737277bba81b32096b06a2a5e9fdca"
+    },
+    {
+      "name": "kp-mini.txt",
+      "sha256": "4a171210e00bcd6464330006d738c1b81a558c5842807ddf79f1391b5e61f634"
+    },
+    {
+      "name": "met-malformed.json",
+      "sha256": "f17034fbcca736d637fa968b4e05bcddc4de1825055a4dee7275c32862bf57c7"
+    },
+    {
+      "name": "met-mini.json",
+      "sha256": "3db1a7f7022d6941337f91d48e518a8525dd9c863cb148130a6bc7179a8eb247"
+    },
+    {
+      "name": "ovation-malformed.json",
+      "sha256": "76bcbba25102de6ca58d8250e88962ac412c8fe7b087bd107b4d9409e62cf3e6"
+    },
+    {
+      "name": "ovation-mini.json",
+      "sha256": "732218dd5e09cecfe844c798dde68084b9303ea47d1b159ffd2d56da9124d902"
+    }
+  ]
+}

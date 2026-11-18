@@ -1,0 +1,12 @@
+// zorja.app on Cloudflare Workers (static assets only, no Worker script, Free plan).
+// Deployed by Workers Builds from main with `npx wrangler deploy --config wrangler.jsonc`.
+{
+  "name": "zorja",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": false,
+  "preview_urls": false
+}

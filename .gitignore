@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+dist/
+*.egg-info/
+backend/var/
+*.sqlite*
+.DS_Store
+coverage.xml
+.coverage
+*.p8
+*.p12
+*.mobileprovision
+
+# Xcode
+xcuserdata/
+DerivedData/
+ios/build/
+
+# Persistent project-local interpreter/tooling (never credentials or source).
+backend/.runtime/
+
+# Local inbox for raw files (fonts, exports); only processed copies are committed.
+incoming/
+
+# Local deploy bundles and tooling
+/.runtime/
+
+# App Store screenshots, captured locally
+/store-screenshots/

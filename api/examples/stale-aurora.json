@@ -1,0 +1,2909 @@
+{
+  "apiVersion": "1.0.0",
+  "modelVersion": "visibility-v0.2-bracket-prototype",
+  "generatedAt": "2026-10-12T21:00:00Z",
+  "refreshAfter": "2026-10-12T21:05:00Z",
+  "minimumRevalidationIntervalSeconds": 60,
+  "location": {
+    "latitude": 59.3293,
+    "longitude": 18.0686,
+    "timezone": "Europe/Stockholm"
+  },
+  "now": {
+    "interval": {
+      "start": "2026-10-12T21:00:00Z",
+      "end": "2026-10-12T21:05:00Z"
+    },
+    "rating": "unknown",
+    "action": "check_later",
+    "basis": "unavailable",
+    "confidence": "low",
+    "summary": "Available evidence cannot establish a viewing opportunity.",
+    "reasons": [
+      {
+        "code": "experimental_model",
+        "effect": "limitation",
+        "message": "Experimental rules; no visibility probability."
+      },
+      {
+        "code": "unmodeled_local_conditions",
+        "effect": "limitation",
+        "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+      },
+      {
+        "code": "source_stale",
+        "effect": "limitation",
+        "message": "Activity evidence is stale.",
+        "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+      }
+    ],
+    "solarAltitudeDegrees": -35.311859851835095,
+    "cloudCoverPercent": 10,
+    "sourceIds": [
+      "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+      "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+      "astronomy"
+    ],
+    "activityEvidence": {
+      "temporalPolicy": "retained-bracket-min-v1",
+      "spatialPolicy": "bilinear-overhead-grid-v1",
+      "forecastInstants": [
+        "2026-10-12T21:10:00Z"
+      ],
+      "sourceIds": [
+        "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+      ],
+      "supportedInterval": null
+    },
+    "factors": {
+      "darkness": "astronomical_night",
+      "weather": "favorable",
+      "activity": "stale"
+    },
+    "activeSince": null,
+    "activeSinceIsBufferLimited": false
+  },
+  "upcomingStatus": "window_available",
+  "upcoming": {
+    "interval": {
+      "start": "2026-10-12T21:00:00Z",
+      "end": "2026-10-13T03:52:09.272461Z"
+    },
+    "endIsSearchLimited": false,
+    "segments": [
+      {
+        "interval": {
+          "start": "2026-10-12T21:00:00Z",
+          "end": "2026-10-12T21:10:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -35.61508719427388,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-12T21:10:00Z",
+          "end": "2026-10-12T22:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -37.11796357665929,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-12T22:00:00Z",
+          "end": "2026-10-12T23:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -38.33707836122275,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-12T23:00:00Z",
+          "end": "2026-10-13T00:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -37.2723522201138,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-13T00:00:00Z",
+          "end": "2026-10-13T01:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -33.88193524299531,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-13T01:00:00Z",
+          "end": "2026-10-13T02:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -28.634612097005558,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-13T02:00:00Z",
+          "end": "2026-10-13T03:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -22.09688158846916,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-13T03:00:00Z",
+          "end": "2026-10-13T03:04:11.147461Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -18.256277665935148,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_night",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      },
+      {
+        "interval": {
+          "start": "2026-10-13T03:04:11.147461Z",
+          "end": "2026-10-13T03:52:09.272461Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_stale",
+            "effect": "limitation",
+            "message": "Activity evidence is stale.",
+            "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          }
+        ],
+        "solarAltitudeDegrees": -15.0255115512803,
+        "cloudCoverPercent": 10,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "retained-bracket-min-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [
+            "2026-10-12T21:10:00Z"
+          ],
+          "sourceIds": [
+            "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c"
+          ],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "astronomical_twilight",
+          "weather": "favorable",
+          "activity": "stale"
+        }
+      }
+    ]
+  },
+  "upcomingActivityInstant": {
+    "forecastAt": "2026-10-12T21:10:00Z",
+    "sourceId": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+    "overheadSignal": null,
+    "activity": "stale",
+    "temporalPolicy": "exact-forecast-instant-v1",
+    "spatialPolicy": "bilinear-overhead-grid-v1"
+  },
+  "auroraReach": {
+    "group": "edge",
+    "magneticLatitude": 56.39,
+    "kpOverhead": 4.8,
+    "kpLowInNorth": 2.8,
+    "method": "aacgm-v2-noaa-oval-v1"
+  },
+  "planning": [
+    {
+      "localDate": "2026-10-12",
+      "period": {
+        "start": "2026-10-12T10:00:00Z",
+        "end": "2026-10-13T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-12T10:00:00Z",
+          "end": "2026-10-13T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "partial",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-10-12T21:00:00Z",
+              "end": "2026-10-13T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T00:00:00Z",
+              "end": "2026-10-13T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T03:00:00Z",
+              "end": "2026-10-13T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T06:00:00Z",
+              "end": "2026-10-13T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T09:00:00Z",
+              "end": "2026-10-13T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a"
+      },
+      "darknessStatus": "windows_available",
+      "windows": [
+        {
+          "interval": {
+            "start": "2026-10-12T21:00:00Z",
+            "end": "2026-10-13T03:52:09.272461Z"
+          },
+          "endIsSearchLimited": false,
+          "segments": [
+            {
+              "interval": {
+                "start": "2026-10-12T21:00:00Z",
+                "end": "2026-10-12T21:10:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -35.61508719427388,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-12T21:10:00Z",
+                "end": "2026-10-12T22:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.11796357665929,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-12T22:00:00Z",
+                "end": "2026-10-12T23:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -38.33707836122275,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-12T23:00:00Z",
+                "end": "2026-10-13T00:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.2723522201138,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T00:00:00Z",
+                "end": "2026-10-13T01:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -33.88193524299531,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T01:00:00Z",
+                "end": "2026-10-13T02:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -28.634612097005558,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T02:00:00Z",
+                "end": "2026-10-13T03:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -22.09688158846916,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T03:00:00Z",
+                "end": "2026-10-13T03:04:11.147461Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -18.256277665935148,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T03:04:11.147461Z",
+                "end": "2026-10-13T03:52:09.272461Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -15.0255115512803,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "localDate": "2026-10-13",
+      "period": {
+        "start": "2026-10-13T10:00:00Z",
+        "end": "2026-10-14T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-13T10:00:00Z",
+          "end": "2026-10-14T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "partial",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-10-13T09:00:00Z",
+              "end": "2026-10-13T12:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T12:00:00Z",
+              "end": "2026-10-13T15:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T15:00:00Z",
+              "end": "2026-10-13T18:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T18:00:00Z",
+              "end": "2026-10-13T21:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-13T21:00:00Z",
+              "end": "2026-10-14T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T00:00:00Z",
+              "end": "2026-10-14T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T03:00:00Z",
+              "end": "2026-10-14T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T06:00:00Z",
+              "end": "2026-10-14T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T09:00:00Z",
+              "end": "2026-10-14T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a"
+      },
+      "darknessStatus": "windows_available",
+      "windows": [
+        {
+          "interval": {
+            "start": "2026-10-13T17:14:21.840820Z",
+            "end": "2026-10-14T03:54:26.088867Z"
+          },
+          "endIsSearchLimited": false,
+          "segments": [
+            {
+              "interval": {
+                "start": "2026-10-13T17:14:21.840820Z",
+                "end": "2026-10-13T18:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -14.891966567342699,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T18:00:00Z",
+                "end": "2026-10-13T18:02:05.756836Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -17.870707822329475,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T18:02:05.756836Z",
+                "end": "2026-10-13T19:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -21.506856852951223,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T19:00:00Z",
+                "end": "2026-10-13T20:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -28.085670222915297,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T20:00:00Z",
+                "end": "2026-10-13T21:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -33.57644216124031,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T21:00:00Z",
+                "end": "2026-10-13T22:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.28461472041168,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T22:00:00Z",
+                "end": "2026-10-13T23:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -38.7109818436802,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-13T23:00:00Z",
+                "end": "2026-10-14T00:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.63162539592149,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T00:00:00Z",
+                "end": "2026-10-14T01:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -34.22007955344765,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T01:00:00Z",
+                "end": "2026-10-14T02:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -28.95151325261844,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T02:00:00Z",
+                "end": "2026-10-14T03:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -22.39728567567765,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T03:00:00Z",
+                "end": "2026-10-14T03:06:34.702148Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -18.404103934180217,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T03:06:34.702148Z",
+                "end": "2026-10-14T03:54:26.088867Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -15.023489575492016,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "localDate": "2026-10-14",
+      "period": {
+        "start": "2026-10-14T10:00:00Z",
+        "end": "2026-10-15T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-14T10:00:00Z",
+          "end": "2026-10-15T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Available evidence cannot establish a viewing opportunity.",
+        "reasons": [
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Experimental rules; no visibility probability."
+          },
+          {
+            "code": "unmodeled_local_conditions",
+            "effect": "limitation",
+            "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+          },
+          {
+            "code": "source_unavailable",
+            "effect": "limitation",
+            "message": "Darkness evidence is unavailable.",
+            "sourceId": "astronomy"
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Activity evidence is unknown."
+          },
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "Global Kp context has no validated local geographic mapping."
+          },
+          {
+            "code": "experimental_model",
+            "effect": "limitation",
+            "message": "Night summary is unknown; inspect individual darkness segments."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+          "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+          "astronomy"
+        ],
+        "activityEvidence": {
+          "temporalPolicy": "exact-forecast-instant-v1",
+          "spatialPolicy": "bilinear-overhead-grid-v1",
+          "forecastInstants": [],
+          "sourceIds": [],
+          "supportedInterval": null
+        },
+        "factors": {
+          "darkness": "mixed",
+          "weather": "partial",
+          "activity": "unknown"
+        }
+      },
+      "globalKpContext": {
+        "status": "available",
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+        "bins": [
+          {
+            "interval": {
+              "start": "2026-10-14T09:00:00Z",
+              "end": "2026-10-14T12:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T12:00:00Z",
+              "end": "2026-10-14T15:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T15:00:00Z",
+              "end": "2026-10-14T18:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T18:00:00Z",
+              "end": "2026-10-14T21:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-14T21:00:00Z",
+              "end": "2026-10-15T00:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-15T00:00:00Z",
+              "end": "2026-10-15T03:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-15T03:00:00Z",
+              "end": "2026-10-15T06:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-15T06:00:00Z",
+              "end": "2026-10-15T09:00:00Z"
+            },
+            "kp": 5.0
+          },
+          {
+            "interval": {
+              "start": "2026-10-15T09:00:00Z",
+              "end": "2026-10-15T12:00:00Z"
+            },
+            "kp": 5.0
+          }
+        ]
+      },
+      "auroraOutlook": {
+        "status": "not_applicable",
+        "highestKp": null,
+        "sourceId": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a"
+      },
+      "darknessStatus": "windows_available",
+      "windows": [
+        {
+          "interval": {
+            "start": "2026-10-14T17:11:37.485351Z",
+            "end": "2026-10-15T03:56:42.465820Z"
+          },
+          "endIsSearchLimited": false,
+          "segments": [
+            {
+              "interval": {
+                "start": "2026-10-14T17:11:37.485351Z",
+                "end": "2026-10-14T17:59:15.102539Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -15.021966124337686,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T17:59:15.102539Z",
+                "end": "2026-10-14T18:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -18.04632933732421,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T18:00:00Z",
+                "end": "2026-10-14T19:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -21.73659837540228,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T19:00:00Z",
+                "end": "2026-10-14T20:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -28.447822443367485,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T20:00:00Z",
+                "end": "2026-10-14T21:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -33.947361749284894,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T21:00:00Z",
+                "end": "2026-10-14T22:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.660494732450815,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T22:00:00Z",
+                "end": "2026-10-14T23:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -39.08296204697936,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-14T23:00:00Z",
+                "end": "2026-10-15T00:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -37.98924153016999,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-15T00:00:00Z",
+                "end": "2026-10-15T01:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -34.55680722427509,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-15T01:00:00Z",
+                "end": "2026-10-15T02:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -29.267244932652147,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-15T02:00:00Z",
+                "end": "2026-10-15T03:00:00Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -22.69676888535551,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-15T03:00:00Z",
+                "end": "2026-10-15T03:08:57.231445Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -18.55163506124744,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_night",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            },
+            {
+              "interval": {
+                "start": "2026-10-15T03:08:57.231445Z",
+                "end": "2026-10-15T03:56:42.465820Z"
+              },
+              "rating": "unknown",
+              "action": "check_later",
+              "basis": "planning",
+              "confidence": "low",
+              "summary": "Available evidence cannot establish a viewing opportunity.",
+              "reasons": [
+                {
+                  "code": "experimental_model",
+                  "effect": "limitation",
+                  "message": "Experimental rules; no visibility probability."
+                },
+                {
+                  "code": "unmodeled_local_conditions",
+                  "effect": "limitation",
+                  "message": "Horizon, terrain, light pollution and optical cloud properties are not modeled."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Activity evidence is unknown."
+                },
+                {
+                  "code": "activity_not_covered",
+                  "effect": "limitation",
+                  "message": "Global Kp context has no validated local geographic mapping."
+                }
+              ],
+              "solarAltitudeDegrees": -15.021428496678048,
+              "cloudCoverPercent": 10,
+              "sourceIds": [
+                "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+                "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+                "astronomy"
+              ],
+              "activityEvidence": {
+                "temporalPolicy": "exact-forecast-instant-v1",
+                "spatialPolicy": "bilinear-overhead-grid-v1",
+                "forecastInstants": [],
+                "sourceIds": [],
+                "supportedInterval": null
+              },
+              "factors": {
+                "darkness": "astronomical_twilight",
+                "weather": "favorable",
+                "activity": "unknown"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "9a0817dc82926a4d9fa38fae7bf60ea192ac487a1e765d79ee0bffdf5b612a5c",
+      "provider": "noaa_swpc",
+      "product": "noaa_ovation",
+      "role": "aurora_short_term",
+      "kind": "model_forecast",
+      "status": "stale",
+      "issuedAt": "2026-10-12T20:10:00Z",
+      "fetchedAt": "2026-10-12T20:58:00Z",
+      "validFrom": "2026-10-12T21:10:00Z",
+      "validUntil": "2026-10-12T21:10:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "908504a3bd0891171b956c18c0fede3d75548aa97917341d1480f0d188790c0a",
+      "provider": "noaa_swpc",
+      "product": "noaa_three_day",
+      "role": "aurora_planning",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T20:00:00Z",
+      "fetchedAt": "2026-10-12T21:00:00Z",
+      "validFrom": "2026-10-12T21:00:00Z",
+      "validUntil": "2026-10-16T21:00:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "19c882dba8c2a8886bef0aff8febda268a4992f2f637940120248db86d0eb8df",
+      "provider": "met_norway",
+      "product": "met_locationforecast",
+      "role": "weather",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T20:00:00Z",
+      "fetchedAt": "2026-10-12T21:00:00Z",
+      "validFrom": "2026-10-12T21:00:00Z",
+      "validUntil": "2026-10-16T21:00:00Z",
+      "attribution": "MET Norway (CC BY 4.0)",
+      "url": "https://api.met.no/"
+    },
+    {
+      "id": "33267d57449a32b147b196c4c5282b258c9d78fa1784fdd672e1cad34bb2dbdf",
+      "provider": "noaa_swpc",
+      "product": "noaa_ovation",
+      "role": "aurora_short_term",
+      "kind": "model_forecast",
+      "status": "stale",
+      "issuedAt": "2026-10-12T19:55:00Z",
+      "fetchedAt": "2026-10-12T20:58:00Z",
+      "validFrom": "2026-10-12T20:55:00Z",
+      "validUntil": "2026-10-12T20:55:00Z",
+      "attribution": "NOAA Space Weather Prediction Center",
+      "url": "https://www.swpc.noaa.gov/"
+    },
+    {
+      "id": "astronomy",
+      "provider": "backend_astronomy",
+      "role": "darkness",
+      "product": "solar-v1-astral-3.2",
+      "kind": "calculation",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T21:00:00Z",
+      "fetchedAt": null,
+      "validFrom": "2026-10-12T21:00:00Z",
+      "validUntil": "2026-10-16T21:00:00Z",
+      "attribution": "Astral 3.2 solar geometry",
+      "url": "https://astral.readthedocs.io/"
+    }
+  ],
+  "limitations": [
+    "Experimental assessment, not a scientifically validated visibility probability.",
+    "Current OVATION activity uses the minimum of retained forecasts at most 20 minutes apart; this experimental bracket is not observed continuous activity.",
+    "The newest upcoming OVATION forecast describes an exact instant, not a duration or a viewing guarantee.",
+    "Global Kp has no validated local planning mapping; horizon conditions are unmodeled.",
+    "Weather is modeled; between samples a conservative cloud envelope is used."
+  ]
+}

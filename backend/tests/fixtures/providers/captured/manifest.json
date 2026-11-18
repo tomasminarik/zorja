@@ -1,0 +1,94 @@
+{
+  "kind": "direct-provider-capture",
+  "locations": "Fixed public city centres, not personal device records",
+  "files": [
+    {
+      "name": "ovation.json",
+      "url": "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
+      "capturedAt": "2026-10-12T19:45:10.370089+00:00",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json",
+        "date": "Mon, 12 Oct 2026 19:44:39 GMT",
+        "last-modified": "Mon, 12 Oct 2026 19:43:17 GMT",
+        "etag": "W/\"e03f1-65da9e8cf71cc\"",
+        "cache-control": "max-age=60",
+        "expires": "Mon, 12 Oct 2026 19:45:39 GMT",
+        "age": "31"
+      },
+      "sha256": "a8685f2a0becac74d690756e62eb1e7bc8c57fed72d6feffb1978bb0e68c276b"
+    },
+    {
+      "name": "kp.txt",
+      "url": "https://services.swpc.noaa.gov/text/3-day-forecast.txt",
+      "capturedAt": "2026-10-12T19:45:10.406360+00:00",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain",
+        "date": "Mon, 12 Oct 2026 19:44:46 GMT",
+        "last-modified": "Mon, 12 Oct 2026 19:44:15 GMT",
+        "etag": "\"c5f-65da9ec5290b2-gzip\"",
+        "cache-control": "max-age=60",
+        "expires": "Mon, 12 Oct 2026 19:45:46 GMT",
+        "age": "23"
+      },
+      "sha256": "167ad2d7c633493044628790f86990f2c6c78ac89d9473eb7920fd69a190251d"
+    },
+    {
+      "name": "met-stockholm.json",
+      "url": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.3293&lon=18.0686",
+      "capturedAt": "2026-10-12T19:45:10.480760+00:00",
+      "status": 200,
+      "headers": {
+        "date": "Mon, 12 Oct 2026 19:45:10 GMT",
+        "content-type": "application/json",
+        "last-modified": "Mon, 12 Oct 2026 19:36:36 GMT",
+        "expires": "Mon, 12 Oct 2026 20:07:24 GMT",
+        "age": "513"
+      },
+      "sha256": "9a5c6ab687f715759412684652cfc2dcec069023d308bef02ecbc451ece114b5"
+    },
+    {
+      "name": "met-oslo.json",
+      "url": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.9139&lon=10.7522",
+      "capturedAt": "2026-10-12T19:45:10.503835+00:00",
+      "status": 200,
+      "headers": {
+        "date": "Mon, 12 Oct 2026 19:45:10 GMT",
+        "content-type": "application/json",
+        "expires": "Mon, 12 Oct 2026 20:06:37 GMT",
+        "last-modified": "Mon, 12 Oct 2026 19:35:30 GMT",
+        "age": "579"
+      },
+      "sha256": "6b5afaee6d0399916e2e70294c1fa6908684347417eb02a0f6e77370ca7a5889"
+    },
+    {
+      "name": "met-helsinki.json",
+      "url": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=60.1699&lon=24.9384",
+      "capturedAt": "2026-10-12T19:45:10.527494+00:00",
+      "status": 200,
+      "headers": {
+        "date": "Mon, 12 Oct 2026 19:45:10 GMT",
+        "content-type": "application/json",
+        "expires": "Mon, 12 Oct 2026 20:00:50 GMT",
+        "last-modified": "Mon, 12 Oct 2026 19:29:07 GMT",
+        "age": "963"
+      },
+      "sha256": "d82da1f71da9f6501ef8cefcff0995a46d63f4a2063c9296e16ad0f885df384f"
+    },
+    {
+      "name": "met-berlin.json",
+      "url": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=52.5200&lon=13.4050",
+      "capturedAt": "2026-10-12T19:45:10.547903+00:00",
+      "status": 200,
+      "headers": {
+        "date": "Mon, 12 Oct 2026 19:45:10 GMT",
+        "content-type": "application/json",
+        "expires": "Mon, 12 Oct 2026 19:45:40 GMT",
+        "last-modified": "Mon, 12 Oct 2026 19:15:03 GMT",
+        "age": "1807"
+      },
+      "sha256": "a37ca3a5b5763255380a7a9929eda70c2249a1ecdc162d747bb80c21cd90cc8d"
+    }
+  ]
+}

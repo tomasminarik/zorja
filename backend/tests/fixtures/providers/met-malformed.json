@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "meta": {
+      "updated_at": "future-or-invalid"
+    },
+    "timeseries": [
+      {
+        "time": "not-a-time",
+        "data": {
+          "instant": {
+            "details": {
+              "cloud_area_fraction": 120
+            }
+          }
+        }
+      }
+    ]
+  }
+}

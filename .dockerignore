@@ -1,0 +1,13 @@
+**
+!backend/
+!backend/Dockerfile
+!backend/requirements.lock
+!backend/src/
+!backend/src/**
+!api/
+!api/openapi.json
+!api/examples/
+!api/openapi.json
+!api/examples/*.json
+**/__pycache__/
+**/*.pyc

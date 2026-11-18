@@ -1,0 +1,221 @@
+{
+  "apiVersion": "0.2.0",
+  "modelVersion": "visibility-v0-proposal",
+  "generatedAt": "2026-10-12T10:00:00Z",
+  "refreshAfter": "2026-10-12T10:05:00Z",
+  "location": {
+    "latitude": 59.3293,
+    "longitude": 18.0686,
+    "timezone": "Europe/Stockholm"
+  },
+  "now": {
+    "interval": {
+      "start": "2026-10-12T10:00:00Z",
+      "end": "2026-10-12T10:10:00Z"
+    },
+    "rating": "unknown",
+    "action": "check_later",
+    "basis": "short_term",
+    "confidence": "low",
+    "summary": "Darkness calculation is unavailable; no viewing window can be identified.",
+    "reasons": [
+      {
+        "code": "source_unavailable",
+        "effect": "limitation",
+        "message": "Solar calculation is unavailable."
+      }
+    ],
+    "solarAltitudeDegrees": null,
+    "cloudCoverPercent": 15,
+    "sourceIds": [
+      "noaa-short",
+      "met-weather",
+      "solar"
+    ],
+    "factors": {
+      "darkness": "unknown",
+      "weather": "favorable",
+      "activity": "supported"
+    }
+  },
+  "upcomingStatus": "unavailable",
+  "upcoming": null,
+  "planning": [
+    {
+      "localDate": "2026-10-12",
+      "period": {
+        "start": "2026-10-12T10:00:00Z",
+        "end": "2026-10-13T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-12T10:00:00Z",
+          "end": "2026-10-13T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Darkness calculation is unavailable.",
+        "reasons": [
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "A supported local auroral signal is unavailable for this interval."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "noaa-planning",
+          "met-weather",
+          "solar"
+        ],
+        "factors": {
+          "darkness": "unknown",
+          "weather": "missing",
+          "activity": "not_covered"
+        }
+      },
+      "windows": [],
+      "darknessStatus": "unavailable"
+    },
+    {
+      "localDate": "2026-10-13",
+      "period": {
+        "start": "2026-10-13T10:00:00Z",
+        "end": "2026-10-14T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-13T10:00:00Z",
+          "end": "2026-10-14T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Darkness calculation is unavailable.",
+        "reasons": [
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "A supported local auroral signal is unavailable for this interval."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "noaa-planning",
+          "met-weather",
+          "solar"
+        ],
+        "factors": {
+          "darkness": "unknown",
+          "weather": "missing",
+          "activity": "not_covered"
+        }
+      },
+      "windows": [],
+      "darknessStatus": "unavailable"
+    },
+    {
+      "localDate": "2026-10-14",
+      "period": {
+        "start": "2026-10-14T10:00:00Z",
+        "end": "2026-10-15T10:00:00Z"
+      },
+      "assessment": {
+        "interval": {
+          "start": "2026-10-14T10:00:00Z",
+          "end": "2026-10-15T10:00:00Z"
+        },
+        "rating": "unknown",
+        "action": "check_later",
+        "basis": "planning",
+        "confidence": "low",
+        "summary": "Darkness calculation is unavailable.",
+        "reasons": [
+          {
+            "code": "activity_not_covered",
+            "effect": "limitation",
+            "message": "A supported local auroral signal is unavailable for this interval."
+          }
+        ],
+        "solarAltitudeDegrees": null,
+        "cloudCoverPercent": null,
+        "sourceIds": [
+          "noaa-planning",
+          "met-weather",
+          "solar"
+        ],
+        "factors": {
+          "darkness": "unknown",
+          "weather": "missing",
+          "activity": "not_covered"
+        }
+      },
+      "windows": [],
+      "darknessStatus": "unavailable"
+    }
+  ],
+  "sources": [
+    {
+      "id": "noaa-short",
+      "provider": "noaa_swpc",
+      "product": "OVATION",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T09:50:00Z",
+      "fetchedAt": "2026-10-12T09:55:00Z",
+      "validFrom": "2026-10-12T10:00:00Z",
+      "validUntil": "2026-10-12T10:00:00Z",
+      "attribution": "Auroral data: NOAA SWPC",
+      "url": "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json"
+    },
+    {
+      "id": "noaa-planning",
+      "provider": "noaa_swpc",
+      "product": "3-day forecast",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T09:00:00Z",
+      "fetchedAt": "2026-10-12T09:55:00Z",
+      "validFrom": "2026-10-12T00:00:00Z",
+      "validUntil": "2026-10-15T00:00:00Z",
+      "attribution": "Geomagnetic forecast: NOAA SWPC",
+      "url": "https://services.swpc.noaa.gov/text/3-day-forecast.txt"
+    },
+    {
+      "id": "met-weather",
+      "provider": "met_norway",
+      "product": "Locationforecast 2.0",
+      "kind": "model_forecast",
+      "status": "fresh",
+      "issuedAt": "2026-10-12T09:00:00Z",
+      "fetchedAt": "2026-10-12T09:55:00Z",
+      "validFrom": "2026-10-12T09:00:00Z",
+      "validUntil": "2026-10-16T00:00:00Z",
+      "attribution": "Weather data from MET Norway",
+      "url": "https://api.met.no/weatherapi/locationforecast/2.0/documentation"
+    },
+    {
+      "id": "solar",
+      "provider": "backend_astronomy",
+      "product": "solar geometry",
+      "kind": "calculation",
+      "status": "unavailable",
+      "issuedAt": null,
+      "fetchedAt": null,
+      "validFrom": null,
+      "validUntil": null,
+      "attribution": "Solar geometry calculated by the backend",
+      "url": "urn:aurora:solar-geometry"
+    }
+  ],
+  "limitations": [
+    "Experimental viewing assessment; not a validated visibility probability.",
+    "Moonlight, light pollution, terrain, and horizon obstruction are not modeled.",
+    "Synthetic fixture; not a real forecast."
+  ]
+}

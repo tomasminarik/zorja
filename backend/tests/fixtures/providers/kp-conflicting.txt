@@ -1,0 +1,16 @@
+SYNTHETIC TEST INPUT — NOT A CAPTURED NOAA PRODUCT
+:Issued: 2026 Oct 12 2100 UTC
+NOAA Kp index breakdown Oct 12-Oct 14 2026
+             Oct 12    Oct 13    Oct 14
+00-03UT       2.00      3.00      4.00
+03-06UT       2.00      3.00      4.00
+06-09UT       2.00      3.00      4.00
+09-12UT       2.00      3.00      4.00
+12-15UT       2.00      3.00      4.00
+15-18UT       2.00      3.00      4.00
+18-21UT       2.00      3.00      4.00
+21-00UT       2.00      3.00      4.00
+
+NOAA Kp index breakdown Oct 12-Oct 14 2026
+             Oct 12    Oct 13    Oct 14
+00-03UT       9.00      3.00      4.00

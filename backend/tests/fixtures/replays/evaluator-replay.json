@@ -1,0 +1,146 @@
+[
+  {
+    "location": "stockholm",
+    "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+    "model": "visibility-v0.1-prototype",
+    "nearestGridSignal": 0.0,
+    "bilinearGridSignal": 0.0,
+    "geometryOnlyHorizonSignal": 2.0,
+    "nowRating": "unfavorable",
+    "nowAction": "skip",
+    "activityState": "not_covered",
+    "cloudEnvelope": 98.6,
+    "kpContext": null,
+    "kpCaptureError": "conflicting_geomagnetic_narrative",
+    "upcomingSegments": 11,
+    "planningSegments": [
+      11,
+      13,
+      10
+    ],
+    "planningRatings": [
+      [
+        "unfavorable"
+      ],
+      [
+        "unfavorable"
+      ],
+      [
+        "unknown"
+      ]
+    ],
+    "sourceIds": [
+      "abc7118e0c4d911d3e40bc455aad1dde990ad7f52ba07efb94fa8c3638904227",
+      "10fb3c58f6ccfc18d4ee9013d5375a4712e4f418ccb48446f6f01ccd2f547c40"
+    ]
+  },
+  {
+    "location": "oslo",
+    "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+    "model": "visibility-v0.1-prototype",
+    "nearestGridSignal": 0.0,
+    "bilinearGridSignal": 0.0,
+    "geometryOnlyHorizonSignal": 3.0,
+    "nowRating": "unknown",
+    "nowAction": "check_later",
+    "activityState": "not_covered",
+    "cloudEnvelope": 29.2,
+    "kpContext": null,
+    "kpCaptureError": "conflicting_geomagnetic_narrative",
+    "upcomingSegments": 12,
+    "planningSegments": [
+      12,
+      14,
+      10
+    ],
+    "planningRatings": [
+      [
+        "unfavorable",
+        "unknown"
+      ],
+      [
+        "unfavorable",
+        "unknown"
+      ],
+      [
+        "unfavorable",
+        "unknown"
+      ]
+    ],
+    "sourceIds": [
+      "abc7118e0c4d911d3e40bc455aad1dde990ad7f52ba07efb94fa8c3638904227",
+      "99d9ea79a00ff1f3fbf54468ebe9ffe261f4a83ccaf096754a9f3aba9c0e50ec"
+    ]
+  },
+  {
+    "location": "helsinki",
+    "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+    "model": "visibility-v0.1-prototype",
+    "nearestGridSignal": 0.0,
+    "bilinearGridSignal": 0.0,
+    "geometryOnlyHorizonSignal": 3.0,
+    "nowRating": "unfavorable",
+    "nowAction": "skip",
+    "activityState": "not_covered",
+    "cloudEnvelope": 100.0,
+    "kpContext": null,
+    "kpCaptureError": "conflicting_geomagnetic_narrative",
+    "upcomingSegments": 11,
+    "planningSegments": [
+      11,
+      14,
+      11
+    ],
+    "planningRatings": [
+      [
+        "unfavorable"
+      ],
+      [
+        "unfavorable"
+      ],
+      [
+        "unfavorable"
+      ]
+    ],
+    "sourceIds": [
+      "abc7118e0c4d911d3e40bc455aad1dde990ad7f52ba07efb94fa8c3638904227",
+      "8fcf970b6bebb6bbd13103a7b70bcee35dcba191261153a35acac4372e362a90"
+    ]
+  },
+  {
+    "location": "berlin",
+    "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+    "model": "visibility-v0.1-prototype",
+    "nearestGridSignal": 0.0,
+    "bilinearGridSignal": 0.0,
+    "geometryOnlyHorizonSignal": 0.0,
+    "nowRating": "unknown",
+    "nowAction": "check_later",
+    "activityState": "not_covered",
+    "cloudEnvelope": 0.0,
+    "kpContext": null,
+    "kpCaptureError": "conflicting_geomagnetic_narrative",
+    "upcomingSegments": 12,
+    "planningSegments": [
+      12,
+      14,
+      14
+    ],
+    "planningRatings": [
+      [
+        "unknown"
+      ],
+      [
+        "unfavorable"
+      ],
+      [
+        "unfavorable",
+        "unknown"
+      ]
+    ],
+    "sourceIds": [
+      "abc7118e0c4d911d3e40bc455aad1dde990ad7f52ba07efb94fa8c3638904227",
+      "cece40168ecdfe4abb951f939622990fe9497f2b3e9ef9641dd9220f94b11338"
+    ]
+  }
+]

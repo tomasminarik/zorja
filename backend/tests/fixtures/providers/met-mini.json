@@ -1,0 +1,47 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      18.0686,
+      59.3293,
+      0
+    ]
+  },
+  "properties": {
+    "meta": {
+      "updated_at": "2026-10-12T20:00:00Z",
+      "units": {
+        "cloud_area_fraction": "%",
+        "cloud_area_fraction_low": "%",
+        "cloud_area_fraction_medium": "%",
+        "cloud_area_fraction_high": "%"
+      }
+    },
+    "timeseries": [
+      {
+        "time": "2026-10-12T21:00:00Z",
+        "data": {
+          "instant": {
+            "details": {
+              "cloud_area_fraction": 20,
+              "cloud_area_fraction_low": 5,
+              "cloud_area_fraction_medium": 10,
+              "cloud_area_fraction_high": 15
+            }
+          }
+        }
+      },
+      {
+        "time": "2026-10-12T22:00:00Z",
+        "data": {
+          "instant": {
+            "details": {
+              "cloud_area_fraction_low": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}

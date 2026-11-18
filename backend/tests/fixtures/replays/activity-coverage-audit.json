@@ -1,0 +1,141 @@
+{
+  "kind": "recorded-provider-coverage-audit",
+  "modelVersion": "visibility-v0.1-prototype",
+  "gateStatus": "unresolved",
+  "liveValidation": false,
+  "transportHealthAssumption": "fresh to isolate evaluator timing; HTTP expiry not relaxed",
+  "uniqueForecastRuns": 1,
+  "pairedObservations": 0,
+  "timing": {
+    "sourceId": "abc7118e0c4d911d3e40bc455aad1dde990ad7f52ba07efb94fa8c3638904227",
+    "observedAt": "2026-10-12T19:35:00+00:00",
+    "forecastAt": "2026-10-12T20:34:00+00:00",
+    "fetchedAt": "2026-10-12T19:45:10.370089+00:00",
+    "leadSeconds": 3540.0,
+    "observationAgeAtFetchSeconds": 610.370089,
+    "observationAgeAtEvaluationSeconds": 610.547903,
+    "forecastOffsetAtEvaluationSeconds": 2929.452097,
+    "evaluatorAgeCeilingSeconds": 1200.0,
+    "providerAgeCeilingSeconds": 1200.0,
+    "evaluatorAgeExpiresAt": "2026-10-12T19:55:00+00:00",
+    "targetRejectedByEvaluatorAge": true,
+    "targetCoveredByProviderPoint": true,
+    "evaluationCoveredByProviderPoint": false,
+    "fallbackMode": "unknown",
+    "supportedInterval": null,
+    "counterfactuals": [
+      {
+        "hypotheticalSecondsAfterTarget": 0,
+        "observationAgeAtThatTimeSeconds": 3540.0,
+        "strictAgeCeilingMustExceedSeconds": 3540.0,
+        "scientificallySupported": false
+      },
+      {
+        "hypotheticalSecondsAfterTarget": 60,
+        "observationAgeAtThatTimeSeconds": 3600.0,
+        "strictAgeCeilingMustExceedSeconds": 3600.0,
+        "scientificallySupported": false
+      },
+      {
+        "hypotheticalSecondsAfterTarget": 300,
+        "observationAgeAtThatTimeSeconds": 3840.0,
+        "strictAgeCeilingMustExceedSeconds": 3840.0,
+        "scientificallySupported": false
+      },
+      {
+        "hypotheticalSecondsAfterTarget": 900,
+        "observationAgeAtThatTimeSeconds": 4440.0,
+        "strictAgeCeilingMustExceedSeconds": 4440.0,
+        "scientificallySupported": false
+      },
+      {
+        "hypotheticalSecondsAfterTarget": 1800,
+        "observationAgeAtThatTimeSeconds": 5340.0,
+        "strictAgeCeilingMustExceedSeconds": 5340.0,
+        "scientificallySupported": false
+      }
+    ]
+  },
+  "regionalReplay": [
+    {
+      "location": "stockholm",
+      "bilinearGridSignal": 0.0,
+      "assessments": [
+        {
+          "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+          "activityState": "not_covered",
+          "rating": "unfavorable",
+          "action": "skip",
+          "refreshAfter": "2026-10-12T19:50:10.547903+00:00"
+        },
+        {
+          "generatedAt": "2026-10-12T20:34:00+00:00",
+          "activityState": "stale",
+          "rating": "unfavorable",
+          "action": "skip",
+          "refreshAfter": "2026-10-12T20:39:00+00:00"
+        }
+      ]
+    },
+    {
+      "location": "oslo",
+      "bilinearGridSignal": 0.0,
+      "assessments": [
+        {
+          "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+          "activityState": "not_covered",
+          "rating": "unknown",
+          "action": "check_later",
+          "refreshAfter": "2026-10-12T19:50:10.547903+00:00"
+        },
+        {
+          "generatedAt": "2026-10-12T20:34:00+00:00",
+          "activityState": "stale",
+          "rating": "unknown",
+          "action": "check_later",
+          "refreshAfter": "2026-10-12T20:39:00+00:00"
+        }
+      ]
+    },
+    {
+      "location": "helsinki",
+      "bilinearGridSignal": 0.0,
+      "assessments": [
+        {
+          "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+          "activityState": "not_covered",
+          "rating": "unfavorable",
+          "action": "skip",
+          "refreshAfter": "2026-10-12T19:50:10.547903+00:00"
+        },
+        {
+          "generatedAt": "2026-10-12T20:34:00+00:00",
+          "activityState": "stale",
+          "rating": "unfavorable",
+          "action": "skip",
+          "refreshAfter": "2026-10-12T20:39:00+00:00"
+        }
+      ]
+    },
+    {
+      "location": "berlin",
+      "bilinearGridSignal": 0.0,
+      "assessments": [
+        {
+          "generatedAt": "2026-10-12T19:45:10.547903+00:00",
+          "activityState": "not_covered",
+          "rating": "unknown",
+          "action": "check_later",
+          "refreshAfter": "2026-10-12T19:50:10.547903+00:00"
+        },
+        {
+          "generatedAt": "2026-10-12T20:34:00+00:00",
+          "activityState": "stale",
+          "rating": "unknown",
+          "action": "check_later",
+          "refreshAfter": "2026-10-12T20:39:00+00:00"
+        }
+      ]
+    }
+  ]
+}

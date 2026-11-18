@@ -1,0 +1,1122 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Zorja Forecast API",
+    "version": "1.0.0",
+    "description": "Frozen v1 local interface. Experimental retained OVATION brackets support current activity; independent scientific calibration, regional evaluation and deployment remain open. Optional upcomingActivityInstant preserves exact forecast timing."
+  },
+  "paths": {
+    "/v1/forecast": {
+      "get": {
+        "operationId": "getForecast",
+        "summary": "Current viewing guidance and three local planning nights",
+        "parameters": [
+          {
+            "name": "latitude",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            }
+          },
+          {
+            "name": "longitude",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Useful forecast, possibly degraded. Inspect source states.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Forecast"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid coordinates or IANA timezone",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limited",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds until retry",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "No useful forecast available",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds until retry",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "postForecast",
+        "summary": "Forecast with location in a bounded JSON body",
+        "description": "Additive alternative to GET. No query parameters. UTF-8 application/json object, at most 1024 bytes and three seconds to read. Missing, extra or duplicate properties, non-finite or non-numeric coordinates, invalid timezone, malformed/encoded/oversized bodies return generic 400 without echoing input. Uses the same evaluation, shared capacity and response semantics as GET. Body transport does not establish platform log privacy.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "latitude",
+                  "longitude",
+                  "timezone"
+                ],
+                "properties": {
+                  "latitude": {
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90
+                  },
+                  "longitude": {
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180
+                  },
+                  "timezone": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Useful forecast, possibly degraded. Inspect source states.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Forecast"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid coordinates or IANA timezone",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limited",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds until retry",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "No useful forecast available",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds until retry",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Location": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "timezone": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude",
+          "timezone"
+        ],
+        "additionalProperties": false
+      },
+      "Interval": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          }
+        },
+        "required": [
+          "start",
+          "end"
+        ],
+        "additionalProperties": false,
+        "description": "Half-open UTC interval; end must be later than start."
+      },
+      "Reason": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "daylight",
+              "twilight_too_bright",
+              "cloud_obstruction",
+              "low_activity",
+              "activity_not_covered",
+              "weather_missing",
+              "source_stale",
+              "source_unavailable",
+              "no_darkness_within_horizon",
+              "unmodeled_local_conditions",
+              "experimental_model"
+            ]
+          },
+          "effect": {
+            "type": "string",
+            "enum": [
+              "blocker",
+              "limitation",
+              "information"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Optional link to a Source, including unavailable feeds. Reason references may differ from assessment.sourceIds, which lists factor evidence."
+          }
+        },
+        "required": [
+          "code",
+          "effect",
+          "message"
+        ],
+        "additionalProperties": false
+      },
+      "Assessment": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "$ref": "#/components/schemas/Interval",
+            "description": "For now, start is the server evaluation instant and end is the next revalidation boundary (a one-microsecond envelope when immediate revalidation is required). Now factors describe that instant, not continuous source-supported activity over the envelope. Other assessments describe conservative representative interval samples."
+          },
+          "rating": {
+            "type": "string",
+            "enum": [
+              "unfavorable",
+              "limited",
+              "promising",
+              "unknown"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "try_now",
+              "wait",
+              "skip",
+              "check_later"
+            ]
+          },
+          "basis": {
+            "type": "string",
+            "enum": [
+              "short_term",
+              "planning",
+              "unavailable"
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "moderate",
+              "unknown"
+            ]
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            }
+          },
+          "solarAltitudeDegrees": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "cloudCoverPercent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "factors": {
+            "$ref": "#/components/schemas/Factors"
+          },
+          "activityEvidence": {
+            "$ref": "#/components/schemas/ActivityEvidence"
+          },
+          "activeSince": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time",
+            "description": "Only on now; optional, additive. When current activity is supported, the forecast instant of the first received OVATION run in the unbroken active stretch (same overhead threshold, gaps at most 20 minutes) within the last three hours of retained runs. A past measurement of model runs, not observed aurora and never a forecast. Null when not active now or unknown."
+          },
+          "activeSinceIsBufferLimited": {
+            "type": "boolean",
+            "description": "Only on now; optional, additive. True when the active stretch reaches the oldest retained run within three hours, so it may have started earlier."
+          }
+        },
+        "required": [
+          "interval",
+          "rating",
+          "action",
+          "basis",
+          "confidence",
+          "summary",
+          "reasons",
+          "solarAltitudeDegrees",
+          "cloudCoverPercent",
+          "sourceIds",
+          "factors"
+        ],
+        "additionalProperties": false
+      },
+      "ViewingWindow": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "$ref": "#/components/schemas/Interval"
+          },
+          "endIsSearchLimited": {
+            "type": "boolean"
+          },
+          "segments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assessment"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "interval",
+          "endIsSearchLimited",
+          "segments"
+        ],
+        "additionalProperties": false
+      },
+      "PlanningNight": {
+        "type": "object",
+        "properties": {
+          "localDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "period": {
+            "$ref": "#/components/schemas/Interval"
+          },
+          "assessment": {
+            "$ref": "#/components/schemas/Assessment"
+          },
+          "windows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ViewingWindow"
+            },
+            "description": "Chronologically ordered, disjoint qualifying darkness intervals, clipped to period and evaluation time. Empty only if calculation succeeded and no qualifying darkness exists."
+          },
+          "darknessStatus": {
+            "type": "string",
+            "enum": [
+              "windows_available",
+              "no_darkness",
+              "unavailable"
+            ]
+          },
+          "globalKpContext": {
+            "$ref": "#/components/schemas/GlobalKpContext",
+            "description": "Optional for backward compatibility; emitted by this implementation."
+          },
+          "auroraOutlook": {
+            "$ref": "#/components/schemas/AuroraOutlook"
+          }
+        },
+        "required": [
+          "localDate",
+          "period",
+          "assessment",
+          "windows",
+          "darknessStatus"
+        ],
+        "additionalProperties": false,
+        "description": "One of the next three relevant local viewing nights, grouped noon-to-noon. Retain the current night before noon only if qualifying darkness remains; otherwise start with tonight. Keep no-window entries during seasons without darkness."
+      },
+      "Source": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provider": {
+            "type": "string",
+            "enum": [
+              "noaa_swpc",
+              "met_norway",
+              "backend_astronomy"
+            ]
+          },
+          "product": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "observation",
+              "model_forecast",
+              "calculation"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "fresh",
+              "stale",
+              "unavailable",
+              "not_applicable"
+            ]
+          },
+          "issuedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fetchedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "validFrom": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "validUntil": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "aurora_short_term",
+              "aurora_planning",
+              "weather",
+              "darkness"
+            ],
+            "description": "Stable semantic role, independent of provider product names, snapshot IDs and library versions. Optional for compatibility; emitted by this implementation."
+          }
+        },
+        "required": [
+          "id",
+          "provider",
+          "product",
+          "kind",
+          "status",
+          "issuedAt",
+          "fetchedAt",
+          "validFrom",
+          "validUntil",
+          "attribution",
+          "url"
+        ],
+        "additionalProperties": false
+      },
+      "Forecast": {
+        "type": "object",
+        "properties": {
+          "apiVersion": {
+            "const": "1.0.0"
+          },
+          "modelVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "generatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "refreshAfter": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$",
+            "description": "Client revalidation instant. May equal generatedAt when exact-instant activity cannot support caching. Never retain try_now after this instant."
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "now": {
+            "$ref": "#/components/schemas/Assessment"
+          },
+          "upcomingStatus": {
+            "type": "string",
+            "enum": [
+              "window_available",
+              "no_darkness_within_horizon",
+              "unavailable"
+            ]
+          },
+          "upcoming": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ViewingWindow"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "planning": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlanningNight"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Source"
+            },
+            "minItems": 1
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "minimumRevalidationIntervalSeconds": {
+            "type": "integer",
+            "minimum": 60,
+            "description": "Minimum foreground interval between request starts for one place on a device, including retries: 60 seconds. Starts for different places are at least 5 seconds apart. This limits requests, never extends refreshAfter or source validity. Honor longer Retry-After values."
+          },
+          "upcomingActivityInstant": {
+            "description": "Optional newest received OVATION prediction strictly after generatedAt, independent of upcoming darkness. Exact forecast instant only; no duration, current recommendation, or visibility probability. Null means no future received grid. Older clients may ignore this additive field.",
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "forecastAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "sourceId": {
+                    "type": "string"
+                  },
+                  "overheadSignal": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 100,
+                    "description": "Bilinear overhead provider signal in provider units; not a viewing probability. Null for missing cells or stale/unavailable input."
+                  },
+                  "activity": {
+                    "type": "string",
+                    "enum": [
+                      "supported",
+                      "unknown",
+                      "not_covered",
+                      "stale",
+                      "unavailable"
+                    ],
+                    "description": "Backend threshold/coverage state for this exact model forecast; does not include darkness or weather."
+                  },
+                  "temporalPolicy": {
+                    "type": "string"
+                  },
+                  "spatialPolicy": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "forecastAt",
+                  "sourceId",
+                  "overheadSignal",
+                  "activity",
+                  "temporalPolicy",
+                  "spatialPolicy"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "auroraReach": {
+            "description": "Optional, additive. How far aurora usually reaches this place. Null when the coordinates cannot be placed. Older clients may ignore it.",
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/AuroraReach"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "apiVersion",
+          "modelVersion",
+          "generatedAt",
+          "refreshAfter",
+          "location",
+          "now",
+          "upcomingStatus",
+          "upcoming",
+          "planning",
+          "sources",
+          "limitations"
+        ],
+        "additionalProperties": false
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "invalid_request",
+              "rate_limited",
+              "forecast_unavailable"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requestId": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "requestId"
+        ],
+        "additionalProperties": false
+      },
+      "Factors": {
+        "type": "object",
+        "properties": {
+          "darkness": {
+            "type": "string",
+            "enum": [
+              "daylight",
+              "civil_twilight",
+              "nautical_twilight",
+              "astronomical_twilight",
+              "astronomical_night",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "weather": {
+            "type": "string",
+            "enum": [
+              "favorable",
+              "mixed",
+              "obstructed",
+              "missing",
+              "stale",
+              "unavailable",
+              "not_covered",
+              "partial",
+              "unknown"
+            ]
+          },
+          "activity": {
+            "type": "string",
+            "enum": [
+              "supported",
+              "low",
+              "missing",
+              "stale",
+              "unavailable",
+              "not_covered",
+              "partial",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "darkness",
+          "weather",
+          "activity"
+        ],
+        "additionalProperties": false,
+        "description": "Factor-specific state at the representative sample, or conservative period summary. Supported activity means a supported local signal, not merely a global Kp value. Partial never implies complete coverage."
+      },
+      "GlobalKpBin": {
+        "type": "object",
+        "properties": {
+          "interval": {
+            "$ref": "#/components/schemas/Interval"
+          },
+          "kp": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 9
+          }
+        },
+        "required": [
+          "interval",
+          "kp"
+        ],
+        "additionalProperties": false
+      },
+      "GlobalKpContext": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "partial",
+              "not_covered",
+              "stale",
+              "unavailable"
+            ]
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bins": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GlobalKpBin"
+            }
+          }
+        },
+        "required": [
+          "status",
+          "sourceId",
+          "bins"
+        ],
+        "additionalProperties": false,
+        "description": "Global Kp forecast context only, not local visibility. Preserve original UTC three-hour bin boundaries. Include bins intersecting the remaining period; available requires full remaining-period coverage, partial means some covered bins, not_covered means none. Stale bins may be shown as historical context only; unavailable has no bins. Never alter local rating or alert eligibility."
+      },
+      "ActivityEvidence": {
+        "type": "object",
+        "properties": {
+          "temporalPolicy": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Versioned backend temporal matching policy; opaque to client scientific logic."
+          },
+          "spatialPolicy": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Versioned spatial policy; opaque to client scientific logic."
+          },
+          "forecastInstants": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            "uniqueItems": true
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "supportedInterval": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Interval"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Backend-supported continuous local-activity interval only. Null means no continuous interval is established, even if an exact forecast instant matches. Never substitutes for weather/darkness freshness or refreshAfter; never changes provider Source coverage."
+          }
+        },
+        "required": [
+          "temporalPolicy",
+          "spatialPolicy",
+          "forecastInstants",
+          "sourceIds",
+          "supportedInterval"
+        ],
+        "additionalProperties": false,
+        "description": "Optional provenance extension. Experimental retained-bracket-min-v1 uses both received forecast endpoints within a declared maximum gap and their minimum bilinear signal. supportedInterval remains local activity support under the named model, not provider duration or scientific calibration. Exact-only evidence has null supportedInterval."
+      },
+      "Delivery": {
+        "additionalProperties": false,
+        "properties": {
+          "token": {
+            "maxLength": 200,
+            "minLength": 32,
+            "pattern": "^[0-9a-f]+$",
+            "title": "Token",
+            "type": "string"
+          },
+          "environment": {
+            "enum": [
+              "sandbox",
+              "production"
+            ],
+            "title": "Environment",
+            "type": "string"
+          }
+        },
+        "required": [
+          "token",
+          "environment"
+        ],
+        "title": "Delivery",
+        "type": "object"
+      },
+      "Preferences": {
+        "additionalProperties": false,
+        "properties": {
+          "enabled": {
+            "title": "Enabled",
+            "type": "boolean"
+          },
+          "quietHours": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/QuietHours"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "enabled",
+          "quietHours"
+        ],
+        "title": "Preferences",
+        "type": "object"
+      },
+      "QuietHours": {
+        "additionalProperties": false,
+        "properties": {
+          "start": {
+            "pattern": "^(?:[01][0-9]|2[0-3]):[0-5][0-9]$",
+            "title": "Start",
+            "type": "string"
+          },
+          "end": {
+            "pattern": "^(?:[01][0-9]|2[0-3]):[0-5][0-9]$",
+            "title": "End",
+            "type": "string"
+          }
+        },
+        "required": [
+          "start",
+          "end"
+        ],
+        "title": "QuietHours",
+        "type": "object"
+      },
+      "DeliveryState": {
+        "additionalProperties": false,
+        "properties": {
+          "environment": {
+            "enum": [
+              "sandbox",
+              "production"
+            ],
+            "title": "Environment",
+            "type": "string"
+          },
+          "tokenPresent": {
+            "const": true,
+            "title": "Tokenpresent",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "environment",
+          "tokenPresent"
+        ],
+        "title": "DeliveryState",
+        "type": "object"
+      },
+      "AuroraReach": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "How far aurora usually reaches this place, from its corrected magnetic latitude and NOAA's average oval rule (zone edge at about 66° magnetic latitude at Kp 0, about 2° towards the equator per Kp step). A fixed planning frame for the place, not a live or validated visibility rating. Kp values are for interpretation and must not be shown as a local rating.",
+        "properties": {
+          "group": {
+            "type": "string",
+            "enum": [
+              "under_zone",
+              "edge",
+              "south"
+            ],
+            "description": "under_zone: magnetic latitude 62° or more. edge: 55° to under 62°. south: under 55°, or magnetic latitude undefined (near the magnetic equator). Unknown future values fall back to neutral presentation."
+          },
+          "magneticLatitude": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 90,
+            "description": "Absolute corrected magnetic latitude in degrees (AACGM-v2 at 110 km, from a precomputed 1° table). Null where AACGM is undefined."
+          },
+          "kpOverhead": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Kp at which the zone's average southern edge is overhead: (66 − magneticLatitude) / 2. May be negative (overhead at any Kp) or above 9 (never by this rule). Null when magneticLatitude is null."
+          },
+          "kpLowInNorth": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "kpOverhead − 2: the zone's edge about 4° poleward, where aurora stands at least 10° above the northern horizon. May be negative or above 9. Null when magneticLatitude is null."
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Method identifier, currently aacgm-v2-noaa-oval-v1."
+          }
+        },
+        "required": [
+          "group",
+          "magneticLatitude",
+          "kpOverhead",
+          "kpLowInNorth",
+          "method"
+        ]
+      },
+      "AuroraOutlook": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "Night planning outlook for south-group places: whether the night's highest forecast Kp over its remaining dark hours (or the whole remaining period when the night has no darkness) reaches the place's kpLowInNorth. It helps choose a night; it is not a promise, a probability or a local rating, and not_expected does not mean impossible. Never changes rating, action or alert eligibility.",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "could_reach",
+              "not_expected",
+              "not_applicable",
+              "not_known_yet",
+              "stale",
+              "unavailable"
+            ],
+            "description": "could_reach: highestKp ≥ kpLowInNorth. not_expected: lower, or the place is never reached by this rule (kpLowInNorth above 9 or undefined). not_applicable: under_zone and edge places, where cloud and darkness decide. not_known_yet: the fresh Kp forecast does not cover the whole span. stale and unavailable follow the Kp source."
+          },
+          "highestKp": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 9,
+            "description": "Highest forecast Kp bin over the span. Null unless status is could_reach or not_expected, and null for not_expected without covering data."
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "status",
+          "highestKp",
+          "sourceId"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Copyright (c) 2026 Tomas Minarik. All rights reserved.
+
+The source code, design and other material in this repository may not be
+copied, modified, distributed or used without written permission, except
+where the terms of the site hosting this repository allow viewing it.
+
+Third-party material keeps its own licence:
+
+- Outfit typeface: SIL Open Font License 1.1. The licence text ships with
+  the font in the app.
+- MET Norway weather data: Norwegian Licence for Open Government Data
+  (NLOD) 2.0 and Creative Commons 4.0 BY International, with attribution
+  to MET Norway.
+- NOAA Space Weather Prediction Center data: public domain (US Government
+  work), credited to NOAA SWPC.
+- Software dependencies: the licences in their own packages.

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Zorja</title>
+<meta name="description" content="What happens to your data in Zorja: very little. No account, no ads, no tracking.">
+<meta name="theme-color" content="#05070D">
+<link rel="icon" href="/assets/icon-120.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-120.png">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="module" src="/assets/js/page.js"></script>
+</head>
+<body class="subpage">
+<div class="sky" aria-hidden="true"><canvas id="sky"></canvas><div class="sky-rise"></div><div class="sky-fade"></div></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Zorja home"><span>Zorja</span></a>
+  <nav aria-label="Main"><a href="/support/">Support</a></nav>
+</header>
+
+<!-- Source: docs/privacy-policy.md. Keep the two the same. -->
+<main id="main" class="page">
+  <p class="kicker rise" data-i="0">Privacy Policy</p>
+  <h1 class="display-s"><span class="rise" data-i="1">Very Little,</span><br><span class="rise" data-i="2">On Purpose.</span></h1>
+  <p class="lead rise" data-i="3">Zorja tells you whether it’s worth going out to look for the northern lights. It’s free, with no account, no ads and no tracking. This policy explains what happens to your data, which is very little.</p>
+  <p class="effective rise" data-i="4">Last updated 12 November 2026.</p>
+
+  <article class="prose">
+    <section class="reveal">
+      <h2>Who Is Responsible</h2>
+      <p>Zorja is made by Tomas Minarik. Questions about privacy: <a href="mailto:hello@tomasminarik.com">hello@tomasminarik.com</a>.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Your Location</h2>
+      <p>To check the sky where you are, Zorja needs a location: either your phone’s, if you allow it, or a place you choose.</p>
+      <ul>
+        <li>Your phone’s location is read once, when a forecast needs it. Zorja doesn’t track you or follow where you go.</li>
+        <li>Before anything leaves your phone, the location is rounded to about 1 km. Zorja never sends your exact position.</li>
+        <li>The rounded location goes to Zorja’s server, which uses it to get the weather from the Norwegian Meteorological Institute (MET Norway) and to work out darkness and aurora activity for that spot.</li>
+        <li>The server doesn’t save your location with anything that identifies you, and doesn’t write it to any logs. The weather for that rounded spot is kept for up to 6 hours, so the next request nearby doesn’t have to ask MET Norway again.</li>
+      </ul>
+      <p>You can turn location off at any time in your iPhone’s Settings and choose a place instead.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>What Stays On Your Phone</h2>
+      <p>Your saved places, the place you have selected and the last forecast are stored only on your phone. They stay until you remove a place or delete the app. The eye-adjustment timer stores nothing.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>This Website</h2>
+      <ul>
+        <li><strong>Cloudflare</strong> hosts zorja.app. Like any web host, it sees your IP address and basic request details (time, page requested, result), under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.</li>
+        <li>The site sets no cookies, stores nothing in your browser, has no analytics and loads nothing from other companies. Its fonts are served from zorja.app itself.</li>
+        <li>If you check tonight’s sky on the site, the place you pick, or your browser’s location if you allow it, is rounded to about 1 km and sent from your browser straight to Zorja’s server. It’s handled there exactly as described above.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2>Who Else Is Involved</h2>
+      <ul>
+        <li><strong>Vercel</strong> runs Zorja’s server, in Frankfurt. Like any web host, it sees your IP address and basic request details (time, address requested, result). Vercel keeps those request details for 1 hour, and may keep network data longer to protect its service against abuse (<a href="https://vercel.com/legal/privacy-notice">Vercel’s privacy notice</a>). It doesn’t keep the contents of requests.</li>
+        <li><strong>Upstash</strong> stores the server’s shared cache, in Frankfurt: weather for rounded spots (up to 6 hours) and aurora data that contains nothing about you.</li>
+        <li><strong>MET Norway</strong> receives the rounded location from Zorja’s server, never from your phone, so it doesn’t see your IP address.</li>
+        <li><strong>NOAA</strong>, the US space weather agency, provides aurora data. It receives nothing about you.</li>
+        <li><strong>Apple</strong> provides place search and the map. What you type into search and the map you view go to Apple under <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>. If you add a viewing time to your calendar, Apple’s own calendar sheet handles it, and Zorja keeps nothing.</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2>What Zorja Doesn’t Do</h2>
+      <p>No account, no ads, no analytics, no tracking across apps or websites, and no selling or sharing of data. Zorja contains no third-party analytics, advertising or crash-reporting code.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Your Rights</h2>
+      <p>Zorja keeps nothing that identifies you, so there is nothing to look up, export or delete on the server. To remove everything on your phone, delete the app. If you’re in the EU or UK, you have rights under the GDPR, including the right to complain to your data protection authority. Write to the address above with any question.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Children</h2>
+      <p>Zorja is suitable for all ages and collects no more from children than from anyone else, which is nothing that identifies them.</p>
+    </section>
+
+    <section class="reveal">
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published at the same address, with its date.</p>
+    </section>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand"><span>Zorja</span><span class="muted">© 2026</span></div>
+  <p class="muted">Forecast data: NOAA SWPC and MET Norway.</p>
+  <nav aria-label="Footer"><a href="/support/">Support</a><a href="/">Home</a></nav>
+</footer>
+</body>
+</html>
