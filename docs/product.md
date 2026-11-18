@@ -2,13 +2,13 @@
 
 ## Confirmed decisions
 
-App name: Zorja (decided 2026-11-04), used for the repository, Xcode project, bundle ID (`com.tomasminarik.Zorja`), API title, provider User-Agent, Vercel project and Redis database. Native iOS using Swift and SwiftUI, targeting iOS 26 minimum. Android is outside MVP scope. Geography is the launch regions below: Northern Europe, Poland and Canada. NOAA SWPC supplies auroral data; Yr.no is preferred for weather subject to assessment. The private shared repository is [tomasminarik/zorja](https://github.com/tomasminarik/zorja). An Apple Developer Account is available. No domain is required initially. No monetization is planned; the app is a non-commercial personal project. The goal is an App Store release. €0 in infrastructure and all additional project costs is mandatory. No usage/adoption target is defined.
+App name: Zorja (decided 2026-11-04), used for the repository, Xcode project, bundle ID (`com.tomasminarik.Zorja`), API title, provider User-Agent, Vercel project and Redis database. Native iOS using Swift and SwiftUI, targeting iOS 26 minimum. Android is outside MVP scope. The app works anywhere; the launch regions below are where the guidance is checked. NOAA SWPC supplies auroral data; Yr.no is preferred for weather subject to assessment. The private shared repository is [tomasminarik/zorja](https://github.com/tomasminarik/zorja). An Apple Developer Account is available. No domain is required initially. No monetization is planned; the app is a non-commercial personal project. The goal is an App Store release. €0 in infrastructure and all additional project costs is mandatory. No usage/adoption target is defined.
 
 Ownership and coordination rules are in [AGENTS.md](../AGENTS.md).
 
 ## Release geography
 
-Launch regions (decided 2026-11-04): Sweden, Norway, Finland, Denmark, Iceland, Faroe Islands, Scotland, Poland and Canada. Sweden, Norway and Finland remain the must-have regions. Ireland, Estonia, Latvia, Lithuania and Germany are not in the launch set and can be added later. Canada is the first region outside Europe; MET Norway's global forecast covers it, but the guidance there still needs the same sanity check as the other regions.
+Launch regions (decided 2026-11-04): Sweden, Norway, Finland, Denmark, Iceland, Faroe Islands, Scotland, Poland and Canada. Sweden, Norway and Finland remain the must-have regions. Ireland, Estonia, Latvia, Lithuania and Germany are not in the launch set and can be added later. Canada is the first region outside Europe; MET Norway's global forecast covers it, but the guidance there still needs the same sanity check as the other regions. Launch regions do not limit where the app works: the API and app accept any location, and NOAA's aurora grid and MET Norway's forecast are global. They mark where the guidance is checked and where the collector's darkness cadence is measured.
 
 MET Norway request contact: `hello@tomasminarik.com`.
 

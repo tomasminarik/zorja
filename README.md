@@ -22,7 +22,7 @@
 - **Places** keeps your saved places on the phone. Search, pick on a map, or use your location once.
 - **Tips** has a 20-minute dark-adaptation timer, a red screen and camera advice.
 
-Zorja covers Northern Europe (Sweden, Norway, Finland, Denmark, Iceland, the Faroe Islands and Scotland), Poland and Canada. It handles polar night, midnight sun, twilight and the change of seasons.
+Zorja works anywhere: its aurora and weather sources are global. The guidance has been checked most closely in Northern Europe (Sweden, Norway, Finland, Denmark, Iceland, the Faroe Islands and Scotland), Poland and Canada. It handles polar night, midnight sun, twilight and the change of seasons.
 
 ## Principles
 
