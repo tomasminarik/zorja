@@ -2,7 +2,7 @@
 
 **Should you go out to see the aurora tonight?** Zorja is an iPhone app that answers that question in plain words. It weighs darkness, cloud cover and aurora activity for your place and tells you to go now, wait for a better hour, or skip tonight, with an outlook for the next three nights.
 
-[![Download on the App Store](https://img.shields.io/badge/Download_on_the-App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/us/app/zorja-northern-lights/id6833883953)
+[![Download on the App Store](https://img.shields.io/badge/Download_on_the-App_Store-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/id6833883953)
 
 [zorja.app](https://zorja.app) · [Design in Figma](https://www.figma.com/design/aoeRKZh2khWgHNtaCmxZ55/Zorja-App---Public?node-id=86-688) · [Privacy](https://zorja.app/privacy/) · [Support](https://zorja.app/support/)
 
@@ -58,23 +58,6 @@ Read more in [architecture](docs/architecture.md), the [forecast model](docs/for
 | [`site/`](site) | The [zorja.app](https://zorja.app) website, served as static assets on Cloudflare Workers. |
 | [`docs/`](docs) | Product brief, forecast model, API, privacy, hosting and the [decisions](docs/decisions.md) behind them. |
 | [`tools/`](tools) | Contract checker, local site server and image helpers. |
-
-## Running it
-
-Backend (needs [uv](https://docs.astral.sh/uv/)):
-
-```sh
-cd backend
-uv sync --locked
-make check   # format, lint, strict typing, tests and the contract check
-make serve   # local forecast API
-```
-
-App: open `ios/Zorja.xcodeproj` in Xcode and run the `Zorja` scheme. Debug builds start on bundled sample forecasts and can switch to a local server or the live API from the developer menu.
-
-Site: `python3 tools/serve_site.py`, and `node --test site/tests/*.test.mjs` for its tests.
-
-See the [backend README](backend/README.md) for replays, provider captures and the Redis tests.
 
 ## How it was built
 
