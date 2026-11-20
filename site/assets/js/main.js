@@ -22,6 +22,21 @@ const revealer = new IntersectionObserver((entries) => {
 }, { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach((el) => revealer.observe(el));
 
+// ---------- Film ----------
+// Plays once, muted, when mostly in view, and pauses out of view. With reduced
+// motion, or when the browser refuses to autoplay, it waits behind its controls.
+const film = document.getElementById('film');
+if (film) {
+  const offerControls = () => { film.controls = true; };
+  film.addEventListener('ended', offerControls);
+  if (reduceMotion.matches) offerControls();
+  new IntersectionObserver(([e]) => {
+    if (film.controls) { if (!e.isIntersecting) film.pause(); return; }
+    if (e.isIntersecting) film.play().catch(offerControls);
+    else film.pause();
+  }, { threshold: 0.6 }).observe(film);
+}
+
 // ---------- Pinned phone ----------
 const skyEl = document.querySelector('.sky');
 const checkEl = document.getElementById('tonight');

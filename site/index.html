@@ -134,6 +134,17 @@
   </div>
   <p class="sr-only">Screens of the Zorja app: Now says "Go Out Right Now." in Stockholm, Tonight shows each hour from sunset to sunrise as a circle, and 3 Nights tags the best of the next three nights.</p>
 
+  <section class="film" aria-labelledby="film-title">
+    <h2 id="film-title" class="title reveal">See A Night<br>In 18 Seconds.</h2>
+    <div class="film-frame reveal" data-i="1">
+      <video id="film" muted playsinline preload="none" poster="/assets/film/zorja-wide.jpg" aria-describedby="film-desc">
+        <source src="/assets/film/zorja-square.mp4" type="video/mp4" media="(max-width: 699px)">
+        <source src="/assets/film/zorja-wide.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p id="film-desc" class="sr-only">A silent 18-second film: someone searches for Tromsø, Zorja says "Wait Until 22:00." while cloud clears, then "Go Out Right Now." with "Tonight Best Until 05:52.", the hour timeline moves through the night, and it ends on the Zorja icon with "Go now. Wait. Or skip tonight."</p>
+  </section>
+
   <section id="tonight" class="check" aria-labelledby="check-title">
     <h2 id="check-title" class="title reveal">What’s Tonight Like<br>Where You Are?</h2>
     <p class="body reveal" data-i="1">Your browser shares your location once. Only a rough area is sent, rounded to about a kilometre, like in the app.</p>
